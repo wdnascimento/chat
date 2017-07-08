@@ -1,0 +1,14 @@
+<template name="messages">
+  <h3>Chat: {{ getChatName.text }}</h3>
+    {{#if currentUser}}
+        <form class="new-message">
+          <input type="text" name="text" placeholder="Digite uma mensagem." />
+        </form>
+        <ul>
+      {{#each messages}}
+        {{> listMessages}}
+      {{/each}}
+    </ul>
+    {{/if}}
+  
+</template>

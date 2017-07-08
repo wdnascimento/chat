@@ -1,0 +1,12 @@
+<template name="chats">
+    {{#if currentUser}}
+       <form class="new-task">
+          <input type="text" name="text" placeholder="Digite aqui para criar um Chat" />
+        </form>
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+    {{/if}}
+</template>  
