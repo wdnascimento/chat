@@ -1,14 +1,20 @@
 <template name="messages">
-  <h3>Chat: {{ getChatName.text }}</h3>
+  <div class="container" >
+    <header>
+    {{>loginButtons}}
+      <h1>Chat  {{ getChatName }}</h1>
+      <a href="http://localhost:3000">Voltar</a>
+    </header>
     {{#if currentUser}}
         <form class="new-message">
           <input type="text" name="text" placeholder="Digite uma mensagem." />
         </form>
+    
         <ul>
       {{#each messages}}
         {{> listMessages}}
       {{/each}}
     </ul>
     {{/if}}
-  
+  </div>
 </template>

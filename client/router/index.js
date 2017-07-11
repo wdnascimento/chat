@@ -12,6 +12,3 @@ Router.route("/chat/:_id", function() {
     });
 });
 
-Router.route("/chat", function() {
-    this.render("chats");
-});

@@ -1,6 +1,8 @@
 <template name="main">
+  <div class="container" >
   <header>
-      <h1>Chats ({{incompleteCount}})</h1>
+    {{>loginButtons}}
+      <h1>Chats </h1>
       <label class="hide-completed">
         <input type="checkbox" />
         Ocultar Chats
@@ -9,5 +11,5 @@
   {{#if currentUser}}
     {{> chats}}
   {{/if}}
-
+  </div>
 </template>

@@ -21,7 +21,7 @@ Template.messages.helpers({
       return Messages.find({taskId:Router.current().params._id});
   },
   getChatName(){
-      return Tasks.find({_id:Router.current().params._id});
+      return Tasks.getName(Router.current().params._id);
   }
 
 });

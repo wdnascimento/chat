@@ -11,8 +11,3 @@ import '../imports/ui/messages.js';
 import '../imports/ui/task.js';
 
 
-
-import '../imports/ui/chats.html';
-
-
-import './main.html';
